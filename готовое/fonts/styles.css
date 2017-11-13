@@ -1,0 +1,8 @@
+@font-face {
+			font-family: "PTSans-CaptionBold";
+			src: url("../fonts/PTSans-CaptionBold.otf"),
+			url("../fonts/PTSans-CaptionBold.woff") format("woff"),
+			url("../fonts/PTSans-CaptionBold.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
