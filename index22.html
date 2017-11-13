@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/all1.css">
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/media.css">		
+<script type="text/javascript">
+
+	function onClick() {
+
+    var container = document.getElementById("container");
+    var container1 = document.getElementById("container1");
+     var container2 = document.getElementById("container2");
+    var textarea1 = document.getElementById("textarea1");
+    var text1 = document.getElementById("text1");
+    var text2 = document.getElementById("text2");
+
+     
+  
+    var div1 = document.createElement("div");
+    div1.innerHTML = text1.value;
+     div1.className = "div1";
+    document.getElementById("text1").value="";
+
+     var div3 = document.createElement("div");
+    div3.innerHTML = text2.value;
+    div3.className = "div3";
+    document.getElementById("text2").value="";
+
+  
+    var div2 = document.createElement("div");
+    div2.className = "div2";
+    div2.innerHTML = textarea1.value;
+    document.getElementById("textarea1").value="ВВЕДИТЕ НОВОЕ СООБЩЕНИЕ";
+
+    var div = document.createElement("div1");
+      div.className = "divB";
+      div.appendChild(div1);
+      container.appendChild(div1);
+
+      var div = document.createElement("div");
+    div.className = "divA";
+    div.appendChild(div3);
+    container.appendChild(div3);
+
+      var div = document.createElement("div2");
+      div.className = "divC";
+      div.appendChild(div2);
+      container.appendChild(div2);
+  
+    
+     
+
+
+
+
+
+
+ }
+
+
+
+
+</script>
+  
+
+</head>
+<body>
+<div class="content">
+	<div class="block1">
+		<div class="top_block">
+			<p class="user_name">Вероника Ростова</p>
+			<p class="user_perfomance">Менеджер по продажам</p>
+		</div>
+		<div class="foto_ver">
+			<img src="images/foto.png">
+		</div>
+		<div class="text_block_foto">
+			<p>Подберу для вас самые лучшие предложения.</p>
+			<p>Мои услуги абсолютно бесплатны</p>
+		</div>
+		<p class="servise">
+			Услуги
+		</p>
+	</div>
+	<div class="clearfix"></div>
+	<div class="clock_first">
+		<div class="first_block">
+			<div class="first_box">Ручное Бронирование</div>
+			<div class="clearfix"></div>
+			<div class="paceje_count">Пакетные туры</div>
+			<div class="clearfix"></div>
+			<div class="hotel">Отел</div>
+		</div>
+		<div class="second_block">
+			<div class="paceje_count1">11</div>
+			<div  class="paceje_count2">3</div>
+			<div class="paceje_count3">1</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<div class="clock_first1">
+		<div class="amount_block">
+			<div class="first_box_amount">Всего</div>
+		</div>
+		<div class="second_block">
+			<div class="paceje_count1">15</div>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<div class="list_menu">
+		<ul>
+			<li class="first_sentenses">Последние отзывы</li>
+			<a href = "#">Все отзывы</a>
+			<li class="count">14</li>
+			<li class="count"><img src="images/think.png"></li>
+			<li class="count">131</li>
+			<li class="count"><img src="images/heart.png"></li>
+		</ul>
+	</div>
+	<div class="comments">
+	<div id="container1"></div>
+	<div id="container2"></div>
+	<div id="container"></div>
+			<div class="comments_block">
+			<div class="container1"></div>
+			<div class="name_block">Самуил</div>
+		</div>
+		<div class="comments_second_block">
+			<div class="date_block">13 октября 2011</div>
+		</div>
+	</div>
+		<div class="comments_first">
+				<p>Привет, Верунь! ниче себе ты крутая. фотка класс!!!!</p>
+		</div>
+		<div class="comments">
+			<div class="comments_block">
+			<div class="name_block">Лилия Семенова</div>
+		</div>
+		<div class="comments_second_block">
+			<div class="date_block">14 октября 2011</div>
+		</div>
+		</div>
+		<div class="comments_first">
+				<p>Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент, это и есть всемирно известный центр огранки алмазов и торговли бриллиантами? </p>
+		</div>
+		<div class="comments">
+			<div class="comments_block">
+			<div class="name_block">Лилия Семенова</div>
+		</div>
+		<div class="comments_second_block">
+			<div class="date_block">14 октября 2011</div>
+		</div>
+		</div>
+		<div class="comments_first">
+				<p>Вероника, здравствуйте! Есть такой вопрос: Особый вид куниц жизненно стабилизирует кинетический момент?</p>
+		</div>
+		<div class="last_block">
+			<span class="enter_text">ВВЕДИТЕ ИМЯ</span><input type="text" id="text1" /> 
+			<br />
+			<span class="enter_text">ВВЕДИТЕ ДАТУ<span class="enter_text"><input type="text" id="text2" /> 
+			<textarea id="textarea1"  class="com" cols="40"  rows="3">ВВЕДИТЕ ТЕКСТ</textarea>
+			<br />
+			<button class="buton" onclick="onClick();"> Написать Консультанту</button>
+		</div>
+		</div>
+
+
+
+
+</div>
+
+
+</body>
+</html>
